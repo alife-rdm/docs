@@ -1,0 +1,12 @@
+.md-grid {
+  max-width: 1440px;
+}
+
+/* Underline content links to distinguish them from bold text */
+.md-content a:not(.md-button) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: normal;
+}
+

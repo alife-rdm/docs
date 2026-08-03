@@ -1,0 +1,2355 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://alife-rdm.github.io/docs/gems/guides/rdm-organising/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../yoda-archiving-metadata-guide/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Best Practices for organising your data - A-LIFE RDM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mona+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Mona Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/matrix.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#best-practices-for-organising-your-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="A-LIFE RDM" class="md-header__button md-logo" aria-label="A-LIFE RDM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            A-LIFE RDM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Best Practices for organising your data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tools/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  GEMs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../stories/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Stories
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../references/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../faqs/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  FAQs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../contact/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contact
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="A-LIFE RDM" class="md-nav__button md-logo" aria-label="A-LIFE RDM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    A-LIFE RDM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tools/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEMs
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GEMs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BP — RDM — Organising Data
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BP — RDM — Organising Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-organise-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why organise data?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Directory structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Directory structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices for Directory Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. File Naming
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. File Naming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-main-advantages-of-file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are the main advantages of file naming?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-a-good-file-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What makes a good file name?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices for File Naming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-maintaining-good-filenames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for maintaining good filenames
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-file-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. File Version
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. File Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-main-advantages-of-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are the main advantages of versioning?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-file-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices for File Versioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references-for-best-practices-for-organising-your-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References for Best Practices for organising your data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yoda-archiving-metadata-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BP — Yoda — Metadata Form
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yoda-requesting-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BP — Yoda — Requesting Space
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zenodo-archiving-metadata-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BP — Zenodo — Metadata Form
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../essentials/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essentials
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Essentials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../essentials/pid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PIDs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../essentials/readmetemplate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    README
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../essentials/license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../manuals/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manuals
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Manuals
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manuals/manuals-yoda-transfer-cyberduck/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connect to Yoda with Cyberduck
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manuals/manuals-rd-transfer-cyberduck/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connect to Research Drive with Cyberduck
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manuals/manuals-create-eduid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create an eduID
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manuals/manuals-surffilesender/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transfer data with SURFfilesender
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../stories/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stories
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../references/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../faqs/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQs
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-organise-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why organise data?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Directory structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Directory structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices for Directory Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. File Naming
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. File Naming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-main-advantages-of-file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are the main advantages of file naming?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-a-good-file-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What makes a good file name?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices for File Naming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-maintaining-good-filenames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for maintaining good filenames
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-file-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. File Version
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. File Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-main-advantages-of-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are the main advantages of versioning?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-file-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices for File Versioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references-for-best-practices-for-organising-your-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References for Best Practices for organising your data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    GEMs
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Guides
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="best-practices-for-organising-your-data"><span style="color:teal"><img alt="🗂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f5c2.svg" title=":card_index_dividers:" /> Best Practices for organising your data</span><a class="headerlink" href="#best-practices-for-organising-your-data" title="Permanent link">&para;</a></h1>
+<p><strong>A practical guide to naming and organising files for A-LIFE researchers</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Overview</p>
+<p><strong>This guide is part of <a href="../../">A-LIFE RDM GEMs</a> → <a href="../">Guides</a>.</strong></p>
+<p>This document provides support to naming and organising files. The information includes:</p>
+<ul>
+<li><a href="#1-directory-structure">Best Practices for Directory Structure</a></li>
+<li><a href="#2-file-naming">Best Practices for File Naming</a></li>
+<li><a href="#3-file-version">Best Practices for File Versioning</a></li>
+</ul>
+<p><strong>Supporting materials:</strong> <a href="../../../tools/tools-vu/yoda/organising/" target="_blank">Yoda — Organising data</a>, <a href="../../../tools/tools-vu/research-drive/organising/" target="_blank">Research Drive — Organising data</a><br />
+<strong>Authors:</strong> Irene Martorelli, Brett Olivier — <strong>Last modification:</strong> 2026-07-28 — <strong>Version:</strong> 0.9.0</p>
+</div>
+<!---
+> this file originates from this previous version: https://hackmd.io/h1vVlAP2SBaR6bjpraOWqg
+-->
+
+<hr />
+<h2 id="why-organise-data"><span style="color:teal"><img alt="ℹ" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2139.svg" title=":information_source:" /> Why organise data?</span><a class="headerlink" href="#why-organise-data" title="Permanent link">&para;</a></h2>
+<p>Well organised data is the foundation of good research data management — it makes your data easier to find, use, share, and preserve, both for yourself and others. This guide provides practical best practices for organising your research data files, specifically tailored for A-LIFE researchers.</p>
+<p>The recommendations in this guide are particularly useful when working collaboratively, preparing data for transfer to Yoda, or getting ready to archive and publish. While this document focuses on digital data, the same principles can also apply to physical data objects such as microscope slides, sample jars, and other lab materials.</p>
+<hr />
+<h2 id="1-directory-structure"><span style="color:teal"><img alt="📁" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4c1.svg" title=":file_folder:" /> 1. Directory structure</span><a class="headerlink" href="#1-directory-structure" title="Permanent link">&para;</a></h2>
+<p>During a research project, you will generate a large number of data files. How you organise these files should align with your research plan and reflects the workflow of your project. Grouping your files into organised folders will not only help keep your research work systematic, but also make it easier to locate files when needed. 
+At the start of a project or study, you likely already have an idea of the types of data you will be working with, collecing and processing. This is a good time to begin <strong>structuring your folders</strong> to keep all your project files optimally well organised from the beginning. </p>
+<p>While it may be tempting to simply dump all your files into one folder, a <strong>logical folder structure</strong> will make navigating your data easier and provide a clear overview of your files. This allows you to quickly find the right file or folder. In this section, we provide practical tips on how to create a folder organisation scheme that best suits your project. </p>
+<hr />
+<h3 id="best-practices-for-directory-structure"><span style="color:teal"><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Best Practices for Directory Structure</span><a class="headerlink" href="#best-practices-for-directory-structure" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Use simple and meaningful folder names</strong><ul>
+<li>Use a systematic naming convention for consistency. </li>
+<li>Use descriptive terms that help to reflect the folder's contents. For example the folder named "<em>submitted</em>" contains most likely final versions of manuscripts that have been submitted.</li>
+<li>Apply the file naming best practices to folder names (see next section on <a href="#2-file-naming">File naming</a>).</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Example of folder names that reflect what they contain<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p><figure style="text-align:center;">
+<img src="../../../images/data-org_folder-structure.png" 
+   alt="rdm-folder-structure" 
+   width="350" 
+   style="border:2px solid black;">
+</figure></p>
+</div>
+</li>
+<li><strong>Group related files together</strong><ul>
+<li>Organise files by <strong>data type</strong> (e.g., images, databases, DNA sequences).</li>
+<li>Organise files by the <strong>kind of material</strong> they contain (e.g., publications, codes, literature or protocols).</li>
+<li>Structure files based on <strong>research workflow activities</strong>. These could be a arranged by a specific event in a process or step in an experiment (e.g., <em><code>input_images</code></em>, <em><code>process_step_initial</code></em> and <em><code>output_graphs</code></em>)</li>
+<li>Files that contain <strong>sensitive or personal data</strong> should be stored in separate folders with appropriate access controls and documentation.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Example of where each folder stores files of the same type of data</p>
+<p><figure style="text-align:center;">
+<img src="../../../images/data-org_types-folder.png" 
+   alt="rdm-folder-types" 
+   width="350" 
+   style="border:2px solid black;">
+</figure></p>
+</div>
+</li>
+<li>
+<p><strong>Structure folders hierarchically</strong></p>
+<ul>
+<li>Limit the number of high-level folders for broad topics, and more specific folders inside.</li>
+<li>Avoid too many hierarchical layers, limit to 3-4 layers.</li>
+<li>The main folder(s) should contain a name that reflects the project and relevant words that can be used to identify the dataset (e.g., <em>Project</em>, <em>Person</em> or <em>Study</em> name). </li>
+<li>If managing multiple independent datasets, create separate subfolders for each.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Example of a well-structured project directory</p>
+<pre><code>project_name/
+    code/               code needed to go from input files to final results
+    data/               raw and primary data (never edit!)
+        raw_external/
+        raw_internal/
+        metadata/
+    doc/                documentation of the study  
+    intermediate/       output files from intermediate analysis steps  
+    logs/               logs from the different analysis steps  
+    notebooks/          notebooks that document your day-to-day work  
+    results/            output from workflows and analyses  
+        figures/  
+        reports/  
+        tables/  
+    scratch/            temporary files that can safely be deleted or lost  
+    README.txt          file and folder description
+</code></pre>
+</div>
+</li>
+<li>
+<p><strong>Folders should be distinct and non-redundant</strong></p>
+<ul>
+<li>group files into distinct categories without unnecessary overlap<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. </li>
+<li>each file should have only one logical location.</li>
+<li>avoid duplicating folders with similar content, which can lead to confusion and version control issues. </li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Example of a poor folder organisation due to redundancy<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<p><figure style="text-align:center;">
+<img src="../../../images/data-org_redundancy.png" 
+   alt="rdm-org-redundandy" 
+   width="300" 
+   style="border:2px solid black;">
+</figure></p>
+</div>
+</li>
+<li>
+<p><strong>Document and share the file organisation scheme</strong></p>
+<ul>
+<li>Design and decribe your file organisation scheme including the folder structure, the folder contents and naming conventions. </li>
+<li>Include the file organisation scheme in a <strong>README</strong> file (ideally in a text or markdown format) that is placed in the main folder of your project. </li>
+<li>The documented scheme makes it easier for you and collaborators to navigate in the project directory and navigate the project.  </li>
+<li><strong>README</strong> files and organisation scheme should be the first reference point when accessing the project directory.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">README template needed?</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:" /> Download the <a href="https://data.research.cornell.edu/data-management/sharing/readme/" target="_blank" rel="noopener">README template</a><sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> to use for your folder, and see our <a href="../../essentials/" target="_blank">Essentials</a> — <a href="../../essentials/readmetemplate/#what-to-include-in-a-readme" target="_blank">What to Include in a README</a> section for guidance.</p>
+</div>
+</li>
+</ol>
+<div class="admonition question">
+<p class="admonition-title">Is there a difference between a folder and a directory?</p>
+<p>The short answer is <strong>yes</strong>. While <strong>directory</strong> and <strong>folder</strong> are often used interchangeably, they have distinct meanings: </p>
+<ul>
+<li><strong>Folder</strong> — the graphical user interface (GUI) term used in file explorers</li>
+<li><strong>Directory</strong> — the file system term, more common in command-line environments</li>
+</ul>
+<p>Any folder can also be accessed as a directory. <img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:" /> Read more about the <a href="https://en.wikipedia.org/wiki/Directory_%28computing%29#Folder_metaphor" target="_blank" rel="noopener">folder metaphor</a>.</p>
+</div>
+<hr />
+<h2 id="2-file-naming"><span style="color:teal"><img alt="🏷" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3f7.svg" title=":label:" /> 2. File Naming</span><a class="headerlink" href="#2-file-naming" title="Permanent link">&para;</a></h2>
+<p>A well structured file name is one of the most useful methods for keeping your data organised and you before anyone else will benefit from it. Think of file naming as the art of turning chaos into order. While naming files is often a personal choice, a logical and adaptable approach will help you quickly idenfity and remember a file's content. </p>
+<p>This section outlines simple, effective rules to ensure a consistent and logical file naming scheme. Applying these best practices from the start, whether is for personal use only (e.g., your files on your laptop) or in share project environments (e.g., such a GitHub), can save you time and effort in the long run. </p>
+<h3 id="what-are-the-main-advantages-of-file-naming"><span style="color:teal">What are the main advantages of file naming?</span><a class="headerlink" href="#what-are-the-main-advantages-of-file-naming" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Enhance <strong>readability</strong> for yourself and others. </li>
+<li><strong>Simplify</strong> your future tasks, suche as searching for a file or batch processing.</li>
+<li>Improving <strong>findability</strong> of files, thus reducing time spent searching for files and navigating through repositories. </li>
+<li><strong>Identify contents</strong> quickly without opening every file to see what it contains. </li>
+<li><strong>Facilitate collaboration</strong> by making files easy for others to understand.</li>
+</ol>
+<h3 id="what-makes-a-good-file-name"><span style="color:teal">What makes a good file name?</span><a class="headerlink" href="#what-makes-a-good-file-name" title="Permanent link">&para;</a></h3>
+<p>A good file name satisfies these three key requirements:
+1. It is <strong>human</strong> readable.
+2. It is <strong>machine</strong> readable.
+3. It supports logical <strong>ordering</strong> and sorting.</p>
+<p>In the next sub-section, we outline practical rules to help you create an effective file naming convention or naming scheme.</p>
+<hr />
+<h3 id="best-practices-for-file-naming"><span style="color:teal"><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Best Practices for File Naming</span><a class="headerlink" href="#best-practices-for-file-naming" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Keep it simple and consistent</strong></p>
+<ul>
+<li>Use clear, meaningful words in filenames that describe the content or purpose.</li>
+<li>Use words or terms that are easy for you, and others, to understand.</li>
+<li>Maintain a consistent naming pattern across similar files.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Example of a consistent file list for experiments</p>
+<pre><code>experiment01_temperature_readings_20250212.csv
+experiment02_temperature_readings_20250212.csv
+experiment01_temp_normalised_20250212.xlsx
+experiment02_temp_normalised_20250212.xlsx
+</code></pre>
+</div>
+</li>
+<li>
+<p><strong>Keep filenames short but descriptive</strong> </p>
+<ul>
+<li>Use abbreviations (two or three letters) when needed. For example, use <code>exp1</code> for <code>experiment1</code>. </li>
+<li>Keep filenames under 32 characters for readability. For example, avoid this sort '<code>whyIsthisFilenameSolongIdidnotThink-This-Through.txt</code>'</li>
+<li>Main key details to include in filenames: </font></span><ul>
+<li><strong>Date</strong> of creation (YYYYMMDD)</li>
+<li><strong>Project</strong> (name/number/experiment/acronym)</li>
+<li><strong>Type</strong> of data (Sample ID, Analysis, Conditions, Modifications, etc.)</li>
+<li><strong>Location</strong> </li>
+<li><strong>Creator</strong> (name/initials)</li>
+<li><strong>Version</strong> number</li>
+<li>Reserve the last 3-letters for file format (such as .xls, .mov, .tif, .doc) </li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of including key elements for generating structured filenames</p>
+<ul>
+<li>
+<p>If your file contains information about: Honeybee project, experiment 2, done in Helsinki, data file created on 2 December 2020,</p>
+<ul>
+<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> then a good <strong>filename</strong> is: '<code>20201202_HB_EXP2_HEL_FLIGHT_V03.xls</code>' </li>
+<li><img alt="📌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4cc.svg" title=":pushpin:" /> following the <strong>rule</strong>: <strong>Date_ProjectAbbreviation_ExperimentNumber_Location_TypeOfData_VersionNumber</strong> <br></li>
+</ul>
+</li>
+<li>
+<p>Or you are dealing with: A cropped image of an ant head taken on the third of December 2020 by Meg Megson</p>
+<ul>
+<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> A good <strong>filename</strong> is: '<code>20201203_MM_HEAD_CROPPED_V1.psd</code>' </li>
+<li><img alt="📌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4cc.svg" title=":pushpin:" /> The <strong>rule</strong> Key: <strong>Time_CreatorData_TypeModification_Version</strong></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Use a naming convention that groups similar files.</strong> </p>
+<ul>
+<li>Your naming convention can vary by file type. For example, one name convention could apply to your image files, another to raw data and another to processed data.</li>
+<li>Note your conventions and store them within the folder for clarity.               </li>
+</ul>
+</li>
+<li>
+<p><strong>Use alpha-numerical characters</strong></p>
+<ul>
+<li>Stick to <strong>letters</strong>, <strong>numbers</strong>, <strong>hyphens</strong> (<code>-</code>) or <strong>underscores</strong> (<code>_</code>).</li>
+<li>Avoid excessive brackets such as (<code>{ [ ( &lt; &gt; ) ] }</code>).</li>
+<li>Avoid the use of special characters ( <code>~ ! @ # $ &amp; % ^ * |</code> ) as these may caouse errors in file paths. </li>
+<li>Avoid the use of periods, commas and quotations ( <code>. , "  '</code>) as these may confuse file extensions.</li>
+<li>Avoid accented characters ( <code>ù, à, ë, ç, ..</code> ) as these can be interepreted differently on different operating systems and terminals.</li>
+<li>Keep naming consistent and document exceptions when necessary.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of using <strong>hyphens</strong> for filenames and repository names</p>
+<ul>
+<li>
+<p><strong>Filenames</strong> (for reports, documents, or human-readable files):</p>
+<pre><code>species-diversity-analysis-20250127.csv
+ocean-temperature-trends-report.pdf
+</code></pre>
+</li>
+<li>
+<p><strong>Repository names</strong></p>
+<pre><code>ocean-biodiversity-mapping
+genome-sequence-analysis-tool
+wildbirds-tracking-pipeline
+</code></pre>
+</li>
+</ul>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Examples of using <strong>underscores</strong> for scripts, datasets and function names.</p>
+<ul>
+<li>
+<p><strong>Datasets</strong> </p>
+<pre><code>plant_growth_experiment_results.csv
+marine_ecosystem_data_2023.csv
+marine_ecosystem_analysis_2024.csv
+water_sample_collection.xls
+</code></pre>
+</li>
+<li>
+<p><strong>Scripts and functions</strong></p>
+<pre><code>water_sample_process.py
+biome_data_analysis.R
+analyse_species_distribution()
+calculate_growth_rate()
+</code></pre>
+</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Examples of filenames with problematic <strong>special characters</strong>.</p>
+<p>These may result from accidental typing, free-form naming, or even when your cat sat on the keyboard <img alt="😼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f63c.svg" title=":smirk_cat:" /></p>
+<pre><code>    checklist*/comeupwithabetterone!@VU.txt
+    *important!!ˆ.docx
+    DONOTshare!!@?.doc
+    doc4=/'code".md
+    Co0Kb0OKvoilà.html
+    aaaaaaaaassddd....txt
+</code></pre>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Should I use hyphens or underscores?</p>
+<p><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4a1.svg" title=":bulb:" /> <strong>Hyphens</strong> are mostly used for human-readable files and repository names, while <strong>underscores</strong> are more common for scripts and datasets, avoiding command-line issues. You will notice that Life Science and bioinformatics fields have a tendency of using underscores (<code>_</code>) in their filenames.</p>
+</div>
+</li>
+<li>
+<p><strong>Avoid spaces</strong> </p>
+<ul>
+<li>Avoid spaces in filenames as they can break tab completion and make working with files on a command line more difficult.</li>
+<li>Instead use <strong>capital letters</strong> and/or <strong>underscores</strong> ( <code>_</code> ) to separate words, terms or abbreviations used to construct a filename (For example: <code>RenalCapsuleScan001</code>, <code>RenalCortexScan001</code>, <code>renal_cap_scan_001</code>, <code>renal_cor_scan_001</code>.)</li>
+<li>A common practice to use <strong>hyphens</strong> ( <code>-</code> ) to delimit words within a term and underscores to separate distinct terms. (For example: <code>renal-capsule_scan_001.tiff</code>).</li>
+<li>Do not start or end filenames with spaces, periods, or hyphens as these can be accidentally introduced in graphical interfaces and may cause issues. </li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Examples filenames with <strong>spaces</strong></p>
+<p>These may seem human-friendly but are actually inconsistent, machine-unfriendly and also difficul to read. </p>
+<pre><code>    Our project doc finalfinal.doc
+    OurProjectDocument final laststage.doc
+    projectfinalfinalfinalversion I promise.doc
+
+    Untitled 123 copy.doc
+    Untitled 123 copy 2.doc
+    Untitled 123 copy 2-1.doc
+</code></pre>
+</div>
+</li>
+<li>
+<p><strong>Use a logical ordering system for filenames</strong></p>
+<ul>
+<li>Think of one or more of the following that works best for you.</li>
+<li><strong>Alphabetical</strong> ordering: start filenames with main key search word for easier sorting based on term. </li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of <strong>alphabetical ordered</strong> filenames</p>
+<p>The files are ordered by the key term <em>fieldwork</em>:</p>
+<pre><code>    fieldwork_farm-adrianne
+    fieldwork_farm-arianna
+    fieldwork_farm-barbara
+    fieldwork_farm-charlotte
+    fieldwork_farm-clara
+</code></pre>
+</div>
+<ul>
+<li><strong>Numerical</strong> ordering: use leading zeros to maintain proper sorting. For example, for more than nine files, use left-zero padding to create a sorted sequence, for example, use <code>00, 05, 09, 10, 11, ..</code> instead of the less intuitive <code>0, 10, 11, 5, 9, ..</code>.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of using <strong>numerical ordering</strong></p>
+<p>Numbered filenames with left-zero padding (as 009 instead of 9). </p>
+<pre><code>    figure008_scatterplot_COR10.png
+    figure009_scatterplot_COR10.png
+    figure010_scatterplot_COR10.png
+    figure011_scatterplot_COR10.png
+</code></pre>
+</div>
+<ul>
+<li><strong>Chronological ordering</strong>: use the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> standard dates format <code>YYYYMMDD</code> or <code>YYYY-MM-DD</code> and times, <code>HH:MM:SS</code>. For example: <code>September 27, 2022 at 6 p.m.</code> can be represented as <code>2022-09-27_18:00:00.000</code>. Of course dates and times can also be used anywhere in the filename.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of using <strong>chronological ordering</strong></p>
+<p>consistent date-based filenames following a chronological order. </p>
+<pre><code>    2025-01-04_processed-data.csv
+    2025-01-05_processed-data.csv
+    2025-04-11_plasmidA01-mutant_H01.csv
+    2025-04-11_plasmidA01-mutant_H02.csv
+    2025-04-11_plasmidA01-mutant_H03.csv
+
+    20260204_meeting-notes.doc
+    20260206_meeting-notes.doc
+    20260209_meeting-notes.doc
+</code></pre>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Examples of inconsistent numbering</p>
+<p>If one is not consistent with the numbering rule, then this leads to incorrect sorting </p>
+<pre><code>    copyfig 111.png
+    fig 111.png
+    figure 21.png
+    fig22.png
+    fig22copy2.png
+    image11.png
+    image1.png
+    image9.png
+</code></pre>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Which ordering system should I use?</p>
+<p><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4a1.svg" title=":bulb:" /> <strong>Alphabetical</strong> and <strong>chronological</strong> ordering help track file versions, while <strong>numerical</strong> ordering ensures files are sorted logically.</p>
+</div>
+</li>
+<li>
+<p><strong>Filenames and file versions</strong></p>
+<ul>
+<li>Use versioning to indicate the current version and avoid confusion.</li>
+<li>Add version numbers at the end of the filename, (for example: version 2 of the your file could be <code>filename_v2.doc</code>.</li>
+<li>Use a consistent format such as using the leading <em>v</em> for <code>v01</code> or <code>v02</code>, or <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> date and timestamps, such as <code>YYYY-MM-DD_HH-MM-SS</code> for precise tracking.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of <strong>versioning</strong> in filenames</p>
+<p>version label used in filenames, such as a format or date. </p>
+<pre><code>    experiment_illumina_v01.csv
+    experiment_illumina_v02.csv
+
+    experiment_illumina_20260223.csv
+    experiment_illumina_20260224.csv
+</code></pre>
+</div>
+</li>
+<li>
+<p><strong>Document your naming conventions and patterns</strong></p>
+<ul>
+<li>Maintain a <strong>README</strong> file in your directory to define abbreviations and naming patterns. </li>
+<li>Include explanations for abbreviations, formatting rules and your versioning methods. </li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of including a naming convention in documentation</p>
+<p>version label used in filenames, such as a format or date. </p>
+<pre><code>## Abbreviations used in dataset A (.csv format), where header corresponds to column name
+
+### column 1: title_name
+P1 : Project_1
+P2 : Project_2
+
+### column 2: scientific_name 
+MUS : Mus musculus
+DRO : Drosophila
+</code></pre>
+</div>
+</li>
+</ol>
+<h3 id="tips-for-maintaining-good-filenames"><span style="color:teal"><img alt="✨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2728.svg" title=":sparkles:" /> Tips for maintaining good filenames</span><a class="headerlink" href="#tips-for-maintaining-good-filenames" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>How is your file named?</strong></p>
+<ul>
+<li>Check how <strong>exported</strong> are automatically named by your tool. For example, <em>Word</em> applications may insert extra spaces or add the word <code>copy</code>).</li>
+<li>Avoid accidental trailing spaces, check the names as they can be hard to spot on high-resolution monitors! </li>
+</ul>
+</li>
+<li>
+<p><strong>Where did my file go?</strong></p>
+<ul>
+<li>Double check where a file is saved, some programs default to unexpected locations and you may lose track of the name. </li>
+<li>Avoid typos and special characters that my cause errors in different operating systems. Some software, M$ Office comes to mind, tends to default where it thinks you should save a file. Don't let M$ dictate your workflow and navigate to where you want to save your file.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="3-file-version"><span style="color:teal"><img alt="🔢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f522.svg" title=":1234:" /> 3. File Version</span><a class="headerlink" href="#3-file-version" title="Permanent link">&para;</a></h2>
+<p>File versioning helps manage multiple versions of files or drafts of your files. It is important for tracking changes, collaborations, and restoring previous versions if needed. </p>
+<h3 id="what-are-the-main-advantages-of-versioning"><span style="color:teal">What are the main advantages of versioning?</span><a class="headerlink" href="#what-are-the-main-advantages-of-versioning" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Increases <strong>transparency</strong> — you are able to track the changes and check what modifications were made, when and by whom. </li>
+<li>Allows you to <strong>go back</strong> in case of errors or unwanted modifications. </li>
+<li><strong>Improves collaboration</strong> by ensuring that all researchers point to the same (latest) version. </li>
+</ol>
+<hr />
+<h3 id="best-practices-for-file-versioning"><span style="color:teal"><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Best Practices for File Versioning</span><a class="headerlink" href="#best-practices-for-file-versioning" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Use clear version numbers in filenames</strong></p>
+<ul>
+<li>Follow a structured versioning system. For example v1.0, v2.0, v1.1, and using the first number for major changes and the second for minor changes; v1_LP if you are working in a group and need to keep track of who made the changes. </li>
+<li>use major.minor notation for small modifications, such as to distinguish between the copies '<code>rdm_documentation_v1.0</code>' with '<code>rdm_documentation_v1.1</code>' <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</li>
+<li>avoid unclear labelling such as <code>finalfinal.doc</code> or finalversion11.doc`.</li>
+<li>optionally, add dates to show when a version was created or when a change has been made.</li>
+</ul>
+</li>
+<li>
+<p><strong>Track who made changes</strong>    </p>
+<ul>
+<li>Add initials to filenames for shared files. For example <code>rdm-documentation-v1.1_IM</code> for Irene Martorelli editing the file.</li>
+<li>Keep a <strong>document</strong> version log that documents what changed, when and by whom to keep track of the changes made beween version.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Examples of a <strong>version</strong> log to keep track</p>
+<p>version table for tracing modification references used for a collaboration. </p>
+<pre><code>    | Version | Date     | Author         | Changes                |
+    |---------|----------|----------------|------------------------|
+    | v0.1    | 20260202 | B. Olivier     | Initial draft          |
+    | v0.2    | 20260212 | I. Martorelli  | Added examples         |
+    | v0.3    | 20260213 | I. Martorelli  | Included a new section |
+</code></pre>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><img alt="👉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f449.svg" title=":point_right:" /> Check out this guide on versioning: <strong><a href="https://www.geeksforgeeks.org/introduction-semantic-versioning/">Introduction to semantic versioning</a></strong></p>
+</div>
+</li>
+</ol>
+<hr />
+<h3 id="references-for-best-practices-for-organising-your-data">References for Best Practices for organising your data<a class="headerlink" href="#references-for-best-practices-for-organising-your-data" title="Permanent link">&para;</a></h3>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Organising files and folders, Wageningen University &amp; Research. <a href="https://www.wur.nl/en/value-creation-cooperation/partnerships-collaborations/wdcc-2/research-data-management-wdcc/doing/organising-files-and-folders.htm">url</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Research Data Management (RDM): Folder Structure, Charles Darwin University. <a href="https://libguides.cdu.edu.au/RDM/folderstructure">url</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Research data management: a practical guide - organising, University of York. <a href="https://subjectguides.york.ac.uk/rdm/organising">url</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Knowledge clip: Keeping research data organized [Video], by UGent Open Science, 2021, Ghent University. <a href="https://www.youtube.com/watch?v=7Ogbkx74Ym8">url</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Guide to writing "readme" style metadata, Cornell data services, Cornell University. <a href="https://data.research.cornell.edu/data-management/sharing/readme/">url</a>&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>File Naming Convention Worksheet, CaltechAUTHORS <a href="https://authors.library.caltech.edu/records/mmnpf-cez11">url</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.tabs", "navigation.expand", "navigation.instant", "navigation.instant.prefetch", "navigation.path", "navigation.tracking", "navigation.prune", "navigation.indexes", "navigation.top", "content.code.annotate", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
